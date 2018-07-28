@@ -1,0 +1,11 @@
+ScopePtr:
+之前的拷贝构造和赋值运算符重载有问题,这里直接禁止使用这两个函数
+禁止拷贝
+禁止赋值
+
+存在问题: 对象数组无法管理
+所以有了 ScopedArray
+
+C++ 11 中的unique_ptr其实就是boost库中的scoped_ptr
+原理完全相同
+但是C++11中并没有 unique_array 这个类,因为标准库中有vector.
